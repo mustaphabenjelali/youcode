@@ -3,10 +3,10 @@
 
 int main()
 {
-    float Km , Yards;
+    float km , Yards;
     printf("Entrer  la distance en Km: ");
-    scanf("%f",Km);
+    scanf("%f", &km);
     Yards = km * 1093.61;
-    printf
+    printf("La distance en Yards est : %.2f \n", Yards);
     return 0;
 }

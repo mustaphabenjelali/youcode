@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1756829401 source:c:\challenge\challenge7\main.c
+	<stdio.h>
+	<stdlib.h>
+
