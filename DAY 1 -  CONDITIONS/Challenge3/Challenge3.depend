@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1756916517 source:c:\challenge\day 1 -  conditions\challenge3\main.c
+	<stdio.h>
+	<stdlib.h>
+
