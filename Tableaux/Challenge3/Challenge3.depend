@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1757338195 source:c:\challenge\tableaux\challenge3\main.c
+	<stdio.h>
+	<stdlib.h>
+

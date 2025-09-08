@@ -4,11 +4,11 @@
 int main()
 {
     char tab[] = "hello";
-    int taille = (tab);
+    int Motf = (tab);
 
 
-    char tab[taille];
-    for (int i = 0; i < taille; i++) {
+    char tab[Motf];
+    for (int i = 0; i < Motf; i++) {
         tab[i] = '_';
     }
     return 0;
