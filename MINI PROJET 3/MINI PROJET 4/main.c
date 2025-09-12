@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define MAX 100
 struct Etudiant
 {
     int id;
@@ -18,6 +19,7 @@ struct Cours
     int credits;
     float note;
 };
+
 
 struct Etudiant etudiants[MAX];
 struct Cours cours[MAX];
