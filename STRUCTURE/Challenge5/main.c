@@ -1,30 +1,34 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
-struct Livre {
-    char titre[100];
-    char auteur[100];
+struct Livre{
+    char titre[50];
+    char auteur[50];
     int annee;
 };
 
-struct Livre creelivre(const char *titre,const char *auteur,int annee){
-    struct Livre li;
 
-    strcpy(li.titre,titre);
-    strcpy(li.auteur,auteur);
-    li.annee = annee;
+Livre creer_livre() {
+    Livre li;
+
+
+    printf("Entrer le titre du livre : ");
+    fgets(li.titre, sizeof(li.titre), stdin);
+
+    printf("Entrer l'auteur du livre : ");
+    fgets(li.auteur, sizeof(li.auteur), stdin);
+
+    printf("Entrer l'annee de publication : ");
+    scanf("%d", &li.annee);
+
     return li;
-};
+}
 
 int main() {
+    Livre mon_livre = creer_livre();
 
-    struct Livre livreli=creelivre("Nodor ino","rachid nadori",2025);
 
-    printf("Titre est : %s\n",livreli.titre);
-    printf("Auteur est : %s\n",livreli.auteur);
-    printf("annee de production : %d\n",livreli.annee);
+    printf("Le livre %s a ete ecrit par %s et publié en %d.\n", mon_livre.titre, mon_livre.auteur, mon_livre.annee);
 
     return 0;
 }
-
